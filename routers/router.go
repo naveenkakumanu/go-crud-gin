@@ -5,6 +5,7 @@ import (
 	"github.com/naveenkakumanu/go-crud-gin/controllers"
 )
 
+// Router to Prepare all the routes
 func Router() *gin.Engine {
 
 	// Reading Parameters from commad line
