@@ -4,6 +4,7 @@ import (
 	"flag"
 	"os"
 
+	"github.com/naveenkakumanu/go-crud-gin/models"
 	router "github.com/naveenkakumanu/go-crud-gin/routers"
 )
 
@@ -26,5 +27,7 @@ func main() {
 	}
 
 	router := router.Router()
+	config := models.DBConfig{}
+	config.ReadConfig()
 	router.Run(port)
 }
