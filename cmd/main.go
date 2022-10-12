@@ -4,6 +4,7 @@ import (
 	"flag"
 	"os"
 
+	"github.com/naveenkakumanu/go-crud-gin/db"
 	"github.com/naveenkakumanu/go-crud-gin/models"
 	router "github.com/naveenkakumanu/go-crud-gin/routers"
 )
@@ -37,6 +38,9 @@ func main() {
 	router := router.Router()
 
 	config := models.DBConfig{}
+	connection := db.DB{}
+	databaseConfig := config.ReadConfig()
+	connection.InitDB(*databaseConfig)
 	// Reading Yaml File
 	config.ReadConfig()
 	// Starting the Application
