@@ -19,6 +19,7 @@ type Database struct {
 	Credential string
 	Host       string
 	Driver     string
+	Port       string
 }
 
 // Reading Database Config from yaml file
