@@ -1,7 +1,7 @@
 db:
   host: 127.0.0.1
-  username: root
-  credential: Admin@123
+  username: test
+  credential: test
   port: 3306
   driver: mysql
   name: lib_mgmt
