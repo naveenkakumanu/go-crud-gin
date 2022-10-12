@@ -2,7 +2,7 @@ db:
   host: 127.0.0.1
   username: root
   credential: Admin@123
-  dbport: 3306
+  port: 3306
   driver: mysql
   name: lib_mgmt
 port: 8081
